@@ -37,6 +37,10 @@
         <mkdir dir="${result.testclasses.dir}"/>
         <javac srcdir="${src.test.dir}"  destdir="${result.testclasses.dir}" debug="true" includeantruntime="false">
             <classpath>
+               
+             <pathelement location="../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+
                 
                 <path refid="NecessaryLibraries"/>
                 <pathelement location="${result.javaclasses.dir}"/>
